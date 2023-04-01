@@ -127,9 +127,8 @@ class Ui_Form(object):
                         self.soccer.setText(str(self.xp))
                         self.po_old += 1
                 
-                
                 if self.po_now in [39 , 51 ,59 ,77 ,86 ,94] :
-                        war = {39:6 , 51:35 ,59:38 ,77:52 ,86:62 ,94:48}
+                        war = {39:5 , 51:34 ,59:38 ,77:52 ,86:61 ,94:48}
                         self.po_old = war[self.po_old]
                         self.po_now = self.po_old
                         if int(self.po_now / 8)%2 :
@@ -139,7 +138,7 @@ class Ui_Form(object):
                         
                         
                 elif self.po_now in [3,10,18,35,73 ,78]:
-                        good = {3:19,10:43,18:48,35:61,73:90 ,78:83}
+                        good = {3:19,10:42,18:47,35:60,73:89 ,78:82}
                         self.po_old = good[self.po_old]
                         self.po_now = self.po_old
                         if int(self.po_now / 8)%2 :
@@ -152,7 +151,7 @@ class Ui_Form(object):
                         self.tass.setStyleSheet("background-color:green;")
                         
                         
-        ######
+        #####
         self.po_now1 += randint(1,6)
         print("now|||>", self.po_now1)
         if self.po_now1 > 96 :
@@ -176,7 +175,7 @@ class Ui_Form(object):
                 
                 
                 if self.po_now1 in [39 , 51 ,59 ,77 ,86 ,94] :
-                        war = {39:6 , 51:35 ,59:38 ,77:52 ,86:62 ,94:48}
+                        war = {39:5 , 51:34 ,59:38 ,77:52 ,86:61 ,94:48}
                         self.po_old1 = war[self.po_old1]
                         self.po_now1 = self.po_old1
                         if int(self.po_now1 / 8)%2 :
@@ -186,7 +185,7 @@ class Ui_Form(object):
                         
                         
                 elif self.po_now1 in [3,10,18,35,73 ,78]:
-                        good = {3:19,10:43,18:48,35:61,73:90 ,78:83}
+                        good = {3:19,10:42,18:47,35:60,73:89 ,78:82}
                         self.po_old1 = good[self.po_old1]
                         self.po_now1 = self.po_old1
                         if int(self.po_now1 / 8)%2 :
